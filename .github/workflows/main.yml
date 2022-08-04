@@ -37,7 +37,7 @@ jobs:
           push: true
           tags: |
             mzamulticloud/kube-news:latest
-            mzamulticloud/kube-news: ${{github.run_number}}
+            mzamulticloud/kube-news:${{github.run_number}}
              
           
      
