@@ -52,7 +52,7 @@ jobs:
      - name: Efetuando o deploy no ambiente de teste
        uses: Azure/k8s-deploy@v4.3
        with:
-         images: mzamulticloud/kube-news:${{github.run_number}}
+         images: mzamulticloud/conversao-temperatura-ago22:${{github.run_number}}
          manifests: |
             k8s/deployment.yaml
    
