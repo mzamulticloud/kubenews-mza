@@ -34,8 +34,8 @@ jobs:
           context: ./src
           push: true
           tags: |
-            mzamulticloud/kube-news:latest
-            mzamulticloud/kube-news:${{github.run_number}}
+            mzamulticloud/conversao-temperatura-ago22:latest
+            mzamulticloud/conversao-temperatura-ago22:${{github.run_number}}
             
   CD:
    runs-on: ubuntu-latest
