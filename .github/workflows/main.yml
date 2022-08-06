@@ -37,6 +37,7 @@ jobs:
             mzamulticloud/conversao-temperatura-ago22:latest
             mzamulticloud/conversao-temperatura-ago22:${{github.run_number}}
             
+            
   CD:
    runs-on: ubuntu-latest
    needs: [CI]
