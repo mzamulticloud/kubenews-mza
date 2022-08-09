@@ -61,7 +61,7 @@ spec:
     spec:
       containers:
       - name: kubenews
-        image: mzamulticloud/conversao-temperatura-ago22:v1
+        image: mzamulticloud/kube-news:v1
         env:
         - name: DB_DATABASE
           value: "kubenews"
