@@ -34,8 +34,8 @@ jobs:
           context: ./src
           push: true
           tags: |
-            mzamulticloud/conversao-temperatura-ago22:latest
-            mzamulticloud/conversao-temperatura-ago22:${{github.run_number}}
+            mzamulticloud/kube-news:latest
+            mzamulticloud/kube-news:${{github.run_number}}
             
             
   CD:
@@ -53,7 +53,7 @@ jobs:
      - name: Efetuando o deploy no ambiente de teste
        uses: Azure/k8s-deploy@v4.3
        with:
-         images: mzamulticloud/conversao-temperatura-ago22:${{github.run_number}}
+         images: mzamulticloud/kube-news:${{github.run_number}}
          manifests: |
             k8s/deployment.yaml
    
